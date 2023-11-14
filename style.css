@@ -125,8 +125,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-/* .container{
-} */
 
 .logo {
     font-family: 'Montserrat', sans-serif;
@@ -272,7 +270,7 @@ p{
     position: fixed;
     bottom: 0;
     height: 0vh;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     justify-content: center;
     top: 50%;
@@ -292,8 +290,8 @@ p{
 }
 
 .container-slide .slide .item{
-    width: 0;
-    height: 0;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -338,15 +336,16 @@ p{
 .item .content-slide {
     position: absolute;
     top: 50%;
-    right: 15%;
+    left: 0px;
     transform: translate(0, -50%);
-    text-align: right;
+    text-align: left;
     color: #eee;
-    width: 90%;
+    width: 40vw;
     font-family: 'Montserrat', sans-serif;
     display: none;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 20%,rgba(255,255,255,1) 83%);
-    padding: 5% 30% 5% 30%;
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 20%,rgba(255,255,255,1) 83%);
+    /* padding: 5% 5% 5% 10%; */
+    padding: 60vh 10vw 60vh 0vw;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -441,8 +440,6 @@ p{
 @media only screen and (max-width: 768px) {
     /* Styles for screens up to 768px wide (typical for phones) */
 
-    body, html {
-        margin: 0;}
     
     .sticky-link{
         bottom: 35vh;
@@ -507,8 +504,27 @@ p{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .item .content-slide {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translate(0, -50%);
+        text-align: right;
+        color: #eee;
+        width: 90%;
+        font-family: 'Montserrat', sans-serif;
+        display: none;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 20%,rgba(255,255,255,1) 83%);
+        padding: 5% 30% 5% 30%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    
+    
+    
+    }
+    
+}    
 
-}
 
 /* footer{
     position: relative;
