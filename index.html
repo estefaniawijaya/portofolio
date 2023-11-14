@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="path/to/atropos.css" />
+    <link rel="icon" href="imgs/EF.png">
   </head>
   <body>
     <div class="sticky-link">
@@ -25,17 +26,22 @@
     <div id="header">
       <div class="container">
         <nav class="fixed-top">
-          <img src="imgs/Asset 1.png" class="logo" alt="Estefania" width="30" height="30">
+            <a class="logo" href="#scrollToTop" id="scrollToTop">Fani.
+              <!-- <i src="imgs/Asset 1.png" alt="Estefania" width="30" height="30"></i> -->
+            </a>
+          </button>
+          <!-- <button class="next"><i class="fa-solid fa-arrow-right" style="color: #121212"></i></button> -->
+
             <ul>
               <li><a href="#scrollabout">about</a></li>
               <li><a href="#scrollprojects">projects</a></li>
               <li><a href="imgs/Estefania Resume.pdf" target="_blank">resume</a></li>
             </ul>
-          </nav>
-        </div>
+        </nav>
+      </div>
     </div>
 
-    <div class=" atropos my-atropos" id="scrollmain">
+    <div class=" atropos my-atropos">
       <div class="atropos-scale" style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
         <div class="atropos-rotate">
           <div class="atropos-inner">
@@ -60,7 +66,7 @@
           </div>
           <div class="col-4" style="text-align: center; flex: 0 1 auto;">
               <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-offset="-300">
-                  <img class="photo-about home-img animate" src="/imgs/1182432.jpg" alt="Fani's Photo" style="border-radius: 1rem;">
+                  <img class="photo-about floating" src="/imgs/1182432.jpg" alt="Fani's Photo" style="border-radius: 1rem;">
               </div>
           </div>
       </div>
@@ -73,44 +79,44 @@
         <div class="slide">
           <div class="item" style="background-image: url(./imgs/Pokemon.png);">
             <div class="floating-porto content-slide">
-              <div class="name-slide">Pokemon Trading Card Game</div>
+              <div class="name-slide">Pokemon TCG</div>
               <div class="des">Colourful yet cute take on the original Pokemon Trading Card Game. This project was a university assignment to recreate a card game with our own style.</div>
-              <button>See more</button>
+              <!-- <button>See more</button> -->
             </div>
           </div>
           <div class="item" style="background-image: url(./imgs/Sunny\ Adventure.png);">
             <div class="floating-porto content-slide">
               <div class="name-slide">Sunny Adventure</div>
               <div class="des">“Sunny Adventure” is a 2D platform game. This game's goal is to collect stars through obstacles and bringing them back to the star gate.</div>
-              <button>See more</button>
+              <!-- <button>See more</button> -->
             </div>
           </div>
           <div class="item" style="background-image: url(./imgs/Kenari\ Cakery.png);">
             <div class="floating-porto content-slide">
               <div class="name-slide">Kenari Cakery</div>
               <div class="des">“Kenari Cakery” is a local cakery famous for their Lapis Surabaya. This project was created to rebrand the logo and packaging towards a modern look.</div>
-              <button>See more</button>
+              <!-- <button>See more</button> -->
             </div>
           </div>
           <div class="item" style="background-image: url(./imgs/Bohopanna.png);">
             <div class="floating-porto content-slide">
               <div class="name-slide">Bohopanna</div>
               <div class="des">“Bohopanna” is a child's clothes shop targeted for young moms who want their kids to look stylish. This project was created to redesign their packaging for new arrivals.</div>
-              <button>See more</button>
+              <!-- <button>See more</button> -->
             </div>
           </div>
           <div class="item" style="background-image: url(./imgs/Menantea.png);">
             <div class="floating-porto content-slide">
-              <div class="name-slide">Menantea x Erika Richardo</div>
-              <div class="des">This is a university project about F&B Ad where I explored special effects in Photoshop. Menantea is a brand that is well known for their fruit teas. So, I chose to highlight fresh fruits with special effects while splashing out of the beverage.</div>
-              <button>See more</button>
+              <div class="name-slide">Menantea</div>
+              <div class="des">Menantea is a well-known local fruit tea brand. This project was created to explore special effects in Photoshop.</div>
+              <!-- <button>See more</button> -->
             </div>
           </div>
           <div class="item" style="background-image: url(./imgs/Mrs.\ Wong.png);">
             <div class="floating-porto content-slide">
               <div class="name-slide">Mrs. Wong</div>
-              <div class="des">Client requested a chinoiserie themed design for this project. So I combined chinoiserie patterns with a tiger illustration to symbolize the 2022 chinese new year animal. I was trusted to make social media content (Instagram feeds, stories, and reels) and the packaging.</div>
-              <button>See more</button>
+              <div class="des">This project was Chinoiserie themed to celebrate the 2022 Chinese New Year. I was trusted to make social media content and packaging for the brand.</div>
+              <!-- <button>See more</button> -->
             </div>
           </div>
         </div>
@@ -203,5 +209,26 @@
     });
   </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Get the anchor element
+      var scrollToTopButton = document.getElementById("scrollToTop");
+  
+      // Add a click event listener
+      scrollToTopButton.addEventListener("click", function (event) {
+          event.preventDefault();
+  
+          // Scroll to the top smoothly
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+  });
+  </script>
+  
+
   <script src="app.js"></script>
+
+  
 </html>
